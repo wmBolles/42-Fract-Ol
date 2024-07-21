@@ -64,9 +64,9 @@ int	mousezoomlistiner_julia(int button, int x, int y, t_xdata *fract)
 	(void)y;
 	mlx_clear_window(fract->connect, fract->win);
 	if (button == ZOOM_IN)
-		fract->zoom *= 1.1;
+		fract->zoom *= 2;
 	else if (button == ZOOM_OUT)
-		fract->zoom *= 0.9;
+		fract->zoom /= 2;
 	rendering_julia(fract);
 	return (SUCCESS);
 }
