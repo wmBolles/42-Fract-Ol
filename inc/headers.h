@@ -6,7 +6,7 @@
 /*   By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 09:20:26 by wabolles          #+#    #+#             */
-/*   Updated: 2024/07/20 14:49:11 by wabolles         ###   ########.fr       */
+/*   Updated: 2024/08/24 17:16:14 by wabolles         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <math.h>
-# include "../mlx/mlx.h"
+# include <mlx.h>
 
 // Data
 enum e_vars

@@ -6,13 +6,13 @@
 #    By: wabolles <wabolles@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/09 08:59:54 by wabolles          #+#    #+#              #
-#    Updated: 2024/08/24 17:14:00 by wabolles         ###   ########.fr        #
+#    Updated: 2024/08/24 17:15:23 by wabolles         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Assets
 CC 		=	cc
-CFLAGS	=	-c -I./inc # you should add flags in ur project
+CFLAGS	=	-c -Wall -Wextra -Werror -I./inc
 OPENGL	=	-framework OpenGL
 APPKIT	=	-framework AppKit
 FAST	=	-O3
@@ -46,7 +46,7 @@ PRINTF_FILES = ft_printf/fmt/print_addr.c 	\
 TOOLS = tools/tools.c tools/usage_display.c tools/tools2.c \
 		tools/events.c
 FRACTALS = fractals/mandelbrot.c fractals/julia.c
-FILES = fract-ol.c $(PRINTF_FILES) $(TOOLS) $(FRACTALS) #$(MLX_FILES)
+FILES = fract-ol.c $(PRINTF_FILES) $(TOOLS) $(FRACTALS)
 OBJ = $(FILES:.c=.o)
 
 #Rules
